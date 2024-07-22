@@ -15,10 +15,7 @@ const Pdf = () => (
 
       {/* Left column */}
       <View style={styles.leftColumn}>
-        <View>
-          {/* Include the Image component */}
-          <Image src={imageUrl} style={styles.image} />
-        </View>
+        <Image src={imageUrl} style={styles.image} />
 
         {/* Education */}
         <View>
@@ -53,83 +50,46 @@ const Pdf = () => (
         </View>
 
         {/* Contact Information */}
-        <View style={styles.section1}>
-          <View style={styles.contacts}>
-            <View style={styles.contact1}>
-            </View>
-            <View style={styles.contact2}>
-          <Text style={styles.sectionHeader1}>Phone</Text>
-            </View>
+        <View style={styles.section}>
+          <View style={styles.contact}>
+            <View style={styles.contactIconPlaceholder} />
+            <Text style={styles.sectionHeader}>Phone</Text>
           </View>
-
-          <View>
-            <Text style={styles.contactInfo}>T: +241 00000000</Text>
-          </View>
-
+          <Text style={styles.contactInfo}>T: +241 00000000</Text>
         </View>
 
-
-        
-        <View style={styles.section1}>
-          <View style={styles.contacts}>
-            <View style={styles.contact1}>
-            </View>
-            <View style={styles.contact2}>
-            <Text style={styles.sectionHeader1}>Email</Text>
-            </View>
+        <View style={styles.section}>
+          <View style={styles.contact}>
+            <View style={styles.contactIconPlaceholder} />
+            <Text style={styles.sectionHeader}>Email</Text>
           </View>
-
-          <View>
           <Text style={styles.contactInfo}>abcde@gmail.com</Text>
-          </View>
-
         </View>
 
-
-        <View style={styles.section1}>
-          <View style={styles.contacts}>
-            <View style={styles.contact1}>
-            </View>
-            <View style={styles.contact2}>
-            <Text style={styles.sectionHeader1}>Website</Text>
-            </View>
+        <View style={styles.section}>
+          <View style={styles.contact}>
+            <View style={styles.contactIconPlaceholder} />
+            <Text style={styles.sectionHeader}>Website</Text>
           </View>
-
-          <View>
           <Text style={styles.contactInfo}>www.site.com</Text>
-          </View>
-
         </View>
 
-
-        <View style={styles.section1}>
-          <View style={styles.contacts}>
-            <View style={styles.contact1}>
-            </View>
-            <View style={styles.contact2}>
-            <Text style={styles.sectionHeader1}>Address</Text>
-            </View>
+        <View style={styles.section}>
+          <View style={styles.contact}>
+            <View style={styles.contactIconPlaceholder} />
+            <Text style={styles.sectionHeader}>Address</Text>
           </View>
-
-          <View>
-          <Text style={styles.contactInfo}>your street address</Text>
-          <Text style={styles.contactInfo}>SS Sterrt City'Zip Code-456</Text>
-
-          </View>
-
+          <Text style={styles.contactInfo}>Your street address</Text>
+          <Text style={styles.contactInfo}>SS Street City'Zip Code-456</Text>
         </View>
-
       </View>
 
       {/* Right column */}
       <View style={styles.rightColumn}>
         <View style={styles.header}>
-          <View>
-            <Text style={styles.firstName}>KABEN
-              <Text style={styles.lastName}> RICHARDS</Text>
-
-            </Text>
-          </View>
+          <Text style={styles.firstName}>KABEN
+            <Text style={styles.lastName}> RICHARDS</Text>
+          </Text>
           <Text style={styles.professionalTitle}>PROFESSIONAL TITLE</Text>
         </View>
 
@@ -149,7 +109,7 @@ const Pdf = () => (
               <Text style={styles.experienceDate}>sept 20xx - jul 20xx</Text>
               <View style={styles.experienceDetails}>
                 <Text style={styles.experienceTitle}>JOB POSITION HERE</Text>
-                <Text style={styles.experienceCompany}>Company name/Californie USA</Text>
+                <Text style={styles.experienceCompany}>Company name/California USA</Text>
                 <Text style={styles.experienceDescription}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </Text>
@@ -172,7 +132,7 @@ const Pdf = () => (
               ))}
             </View>
 
-            <View style={styles.skillColumn1}>
+            <View style={styles.skillColumn}>
               {['Microsoft Word', 'Microsoft PowerPoint', 'HTML/CSS'].map((skill, index) => (
                 <View key={index} style={styles.skill}>
                   <Text style={styles.skillText}>{skill}</Text>
@@ -197,183 +157,124 @@ const styles = StyleSheet.create({
     width: '35%',
     backgroundColor: '#161718',
     color: 'white',
+    padding: 10,
   },
-
   image: {
     width: 200,
     height: 220,
-    paddingLeft: 3,
+    marginBottom: 20,
   },
-
   section: {
-    padding: 10,
+    marginBottom: 20,
   },
-
   sectionHeader: {
     fontSize: 16,
     fontWeight: 'bold',
-    paddingLeft: 20,
-    paddingTop: 0,
+    marginBottom: 5,
   },
   sectionSubHeader: {
     fontSize: 12,
-    paddingLeft: 40,
     fontWeight: 'bold',
-    paddingTop: 0,
+    marginBottom: 3,
   },
   sectionItem: {
     fontSize: 12,
-    paddingLeft: 40,
+    marginBottom: 3,
   },
   sectionDate: {
     fontSize: 10,
-    paddingLeft: 40,
+    marginBottom: 3,
   },
-
-
-  section1: {
-
-  },
-
-
-  contact1: {
-    backgroundColor: 'yellow',
-    width: 40,
-  },
-
-  contact2: {
-    backgroundColor: 'grey',
-    width: 180,
-    fontWeight: 'bold',
-  },
-
-
-  contacts: {
-
+  contact: {
     flexDirection: 'row',
-    paddingTop: 10,
-
+    alignItems: 'center',
+    marginBottom: 5,
   },
-
-
-
-
-  sectionHeader1: {
-    fontSize: 12,
-    paddingLeft: 10,
-
+  contactIconPlaceholder: {
+    width: 20,
+    height: 20,
+    backgroundColor: 'grey',
+    marginRight: 10,
   },
-
-
   contactInfo: {
     fontSize: 10,
-    paddingLeft: 50,
-    paddingTop: 6,
+    paddingLeft: 30,
   },
-
-  icon: {
-    width: 30,
-    height: 35,
-  },
-
   rightColumn: {
-    width: '60%',
+    width: '65%',
     backgroundColor: 'white',
-    padding: 0,
+    padding: 20,
   },
   header: {
     backgroundColor: 'yellow',
-    width: '120%',
-    height: 80,
-    marginTop: 35,
+    padding: 10,
+    marginBottom: 20,
+    alignItems: 'center',
   },
-
   firstName: {
     fontSize: 22,
-    paddingHorizontal: 30,
-    paddingTop: 25,
     fontWeight: 'bold',
   },
   lastName: {
     fontSize: 22,
-    paddingTop: 25,
   },
   professionalTitle: {
     fontSize: 12,
-    paddingHorizontal: 30,
   },
   aboutHeader: {
     fontSize: 16,
     fontWeight: 'bold',
-    paddingLeft: 30,
-    paddingTop: 15,
-    color: '#4C516D',
+    marginBottom: 5,
   },
   aboutText: {
     fontSize: 12,
-    paddingLeft: 30,
-    paddingTop: 10,
-    color: '#4C516D',
+    marginBottom: 20,
   },
   experience: {
     flexDirection: 'row',
-    color: '#4C516D',
     marginBottom: 10,
   },
   experienceDate: {
     fontSize: 12,
-    paddingLeft: 30,
-    paddingTop: 10,
+    marginRight: 10,
   },
   experienceDetails: {
-    fontSize: 12,
-    paddingTop: 10,
-    paddingLeft: 20,
+    flex: 1,
   },
   experienceTitle: {
     fontSize: 12,
-    paddingLeft: 10,
     fontWeight: 'bold',
+    marginBottom: 3,
   },
   experienceCompany: {
     fontSize: 12,
-    paddingLeft: 10,
+    marginBottom: 3,
   },
   experienceDescription: {
-    paddingLeft: 10,
-    width: 230,
-    paddingTop: 10,
+    fontSize: 12,
   },
   skillsContainer: {
     flexDirection: 'row',
-    color: '#4C516D',
+    justifyContent: 'space-between',
   },
-
   skillColumn: {
-    paddingLeft: 150,
+    flex: 1,
+    paddingHorizontal: 10,
   },
-
-  skillColumn1: {
-    paddingLeft: 50,
-  },
-
-
   skill: {
-    paddingTop: 10,
-
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
   },
   skillText: {
     fontSize: 12,
-    paddingTop: 8,
-
+    flex: 1,
   },
   skillBar: {
     width: 80,
     height: 4,
-    paddingTop: 3,
-
+    marginLeft: 10,
   },
-
 });
 
 export default Pdf;
