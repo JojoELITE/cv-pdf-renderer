@@ -16,6 +16,7 @@ const Pdf = () => (
       <View style={styles.leftColumn}>
         <Image src={imageUrl} style={styles.image} />
 
+
         {/* Education */}
         <View>
           <View style={styles.section}>
@@ -83,6 +84,7 @@ const Pdf = () => (
         </View>
       </View>
 
+
       {/* Right column */}
       <View style={styles.rightColumn}>
         <View style={styles.header}>
@@ -105,6 +107,7 @@ const Pdf = () => (
 
           {[...Array(3)].map((_, index) => (
             <View key={index} style={styles.experience}>
+
               <Text style={styles.experienceDate}>sept 20xx - jul 20xx</Text>
               <View style={styles.experienceDetails}>
                 <Text style={styles.experienceTitle}>JOB POSITION HERE</Text>
@@ -120,6 +123,8 @@ const Pdf = () => (
         {/* Software Skills */}
         <View>
           <Text style={styles.aboutHeader}>SOFTWARE SKILL</Text>
+          <Text style={styles.cv}>FILIGRAME</Text>
+
 
           <View style={styles.skillsContainer}>
             <View style={styles.skillColumn}>
@@ -163,6 +168,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     display: 'flex',
   },
+
+  cv: {
+
+    opacity: 20,
+    color: 'red',
+    position: 'absolute',
+    fontSize: 60,
+    bottom: '200%',            /* Place le texte au milieu verticalement */
+    left: '0%',  
+    transform: 'rotate(-67deg)', // Incline le texte de 67 degrés dans le sens contraire des aiguilles d'une montre
+  },
+
   leftColumn: {
     width: '35%',
     backgroundColor: '#161718',
