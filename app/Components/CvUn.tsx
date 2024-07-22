@@ -343,6 +343,7 @@ const styles = StyleSheet.create({
 
   contact1: {
     flexDirection: 'row',
+    paddingLeft: 10,
   },
 
   contactIconPlaceholder1: {
