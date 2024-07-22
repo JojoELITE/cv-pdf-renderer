@@ -2,7 +2,6 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image, Font } from '@react-pdf/renderer';
 
 const imageUrl = "/assets/1.png";
-const barre = "/assets/barre.png";
 
 Font.register({
   family: "CustomFont",
@@ -127,7 +126,12 @@ const Pdf = () => (
               {['Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'].map((skill, index) => (
                 <View key={index} style={styles.skill}>
                   <Text style={styles.skillText}>{skill}</Text>
-                  <Image src={barre} style={styles.skillBar} />
+                  <View style={styles.section1}>
+                    <View style={styles.contact1}>
+                      <View style={styles.contactIconPlaceholder1} />
+                      <Text style={styles.sectionHeader3}></Text>
+                    </View>
+                  </View>
                 </View>
               ))}
             </View>
@@ -136,14 +140,14 @@ const Pdf = () => (
               {['Microsoft Word', 'Microsoft PowerPoint', 'HTML/CSS'].map((skill, index) => (
                 <View key={index} style={styles.skill}>
                   <Text style={styles.skillText}>{skill}</Text>
-                  
+
                   <View style={styles.section1}>
                     <View style={styles.contact1}>
                       <View style={styles.contactIconPlaceholder1} />
-                      <Text style={styles.sectionHeader2}></Text>
+                      <Text style={styles.sectionHeader3}></Text>
                     </View>
-                  </View>                
                   </View>
+                </View>
               ))}
             </View>
           </View>
@@ -299,7 +303,7 @@ const styles = StyleSheet.create({
   },
   skillsContainer: {
     flexDirection: 'row',
-    paddingLeft: 120,
+    paddingLeft: 20,
     paddingTop: 10,
   },
   skillColumn: {
@@ -318,18 +322,24 @@ const styles = StyleSheet.create({
 
   },
   section1: {
-    marginBottom: 20,
   },
 
   contact1: {
     flexDirection: 'row',
-    marginBottom: 5,
   },
 
   contactIconPlaceholder1: {
+    width: 170,
+    height: 5,
+    backgroundColor: 'black',
+  },
+
+  sectionHeader3: {
+    fontSize: 14,
+    fontWeight: 'bold',
     width: 30,
-    height: 20,
-    backgroundColor: 'yellow',
+    backgroundColor: 'grey',
+
   },
 });
 
