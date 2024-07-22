@@ -2,7 +2,6 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image, Font } from '@react-pdf/renderer';
 
 const imageUrl = "/assets/1.png";
-const frame = "/assets/Frame 1.png";
 const barre = "/assets/barre.png";
 
 Font.register({
@@ -55,28 +54,71 @@ const Pdf = () => (
 
         {/* Contact Information */}
         <View style={styles.section1}>
-          <View></View>
+          <View style={styles.contacts}>
+            <View style={styles.contact1}>
+            </View>
+            <View style={styles.contact2}>
+          <Text style={styles.sectionHeader1}>Phone</Text>
+            </View>
+          </View>
 
-          
-          <Text style={styles.sectionHeader1}><Image src={frame} style={styles.icon} />    Phone</Text>
-          <Text style={styles.contactInfo}>T: +241 00000000</Text>
+          <View>
+            <Text style={styles.contactInfo}>T: +241 00000000</Text>
+          </View>
+
         </View>
 
-        <View style={styles.section2}>
-          <Text style={styles.sectionHeader1}><Image src={frame} style={styles.icon} />    Email</Text>
+
+        
+        <View style={styles.section1}>
+          <View style={styles.contacts}>
+            <View style={styles.contact1}>
+            </View>
+            <View style={styles.contact2}>
+            <Text style={styles.sectionHeader1}>Email</Text>
+            </View>
+          </View>
+
+          <View>
           <Text style={styles.contactInfo}>abcde@gmail.com</Text>
+          </View>
+
         </View>
 
-        <View style={styles.section3}>
-          <Text style={styles.sectionHeader1}><Image src={frame} style={styles.icon} />     Website</Text>
+
+        <View style={styles.section1}>
+          <View style={styles.contacts}>
+            <View style={styles.contact1}>
+            </View>
+            <View style={styles.contact2}>
+            <Text style={styles.sectionHeader1}>Website</Text>
+            </View>
+          </View>
+
+          <View>
           <Text style={styles.contactInfo}>www.site.com</Text>
+          </View>
+
         </View>
 
-        <View style={styles.section}>
-          <Text style={styles.sectionHeader1}><Image src={frame} style={styles.icon} />     Address</Text>
-          <Text style={styles.contactInfo}>         your street address</Text>
-          <Text style={styles.contactInfo}>         SS Sterrt City'Zip Code-456</Text>
+
+        <View style={styles.section1}>
+          <View style={styles.contacts}>
+            <View style={styles.contact1}>
+            </View>
+            <View style={styles.contact2}>
+            <Text style={styles.sectionHeader1}>Address</Text>
+            </View>
+          </View>
+
+          <View>
+          <Text style={styles.contactInfo}>your street address</Text>
+          <Text style={styles.contactInfo}>SS Sterrt City'Zip Code-456</Text>
+
+          </View>
+
         </View>
+
       </View>
 
       {/* Right column */}
@@ -171,13 +213,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     paddingLeft: 20,
-    paddingTop: 10,
+    paddingTop: 0,
   },
   sectionSubHeader: {
     fontSize: 12,
     paddingLeft: 40,
     fontWeight: 'bold',
-    paddingTop: 10,
+    paddingTop: 0,
   },
   sectionItem: {
     fontSize: 12,
@@ -188,36 +230,37 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
   },
 
+
   section1: {
 
-    paddingBottom: 0,
-    backgroundColor: 'black',
+  },
+
+
+  contact1: {
+    backgroundColor: 'yellow',
+    width: 40,
+  },
+
+  contact2: {
+    backgroundColor: 'grey',
+    width: 180,
+    fontWeight: 'bold',
+  },
+
+
+  contacts: {
+
+    flexDirection: 'row',
+    paddingTop: 10,
 
   },
 
-  section2: {
-
-    paddingBottom: 0,
 
 
-  },
-
-  section3: {
-
-    paddingBottom: 0,
-
-
-  },
-
-  section4: {
-
-    paddingBottom: 0,
-
-
-  },
 
   sectionHeader1: {
     fontSize: 12,
+    paddingLeft: 10,
 
   },
 
@@ -225,6 +268,7 @@ const styles = StyleSheet.create({
   contactInfo: {
     fontSize: 10,
     paddingLeft: 50,
+    paddingTop: 6,
   },
 
   icon: {
