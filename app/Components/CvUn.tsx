@@ -53,7 +53,7 @@ const Pdf = () => (
         <View style={styles.section}>
           <View style={styles.contact}>
             <View style={styles.contactIconPlaceholder} />
-            <Text style={styles.sectionHeader}>Phone</Text>
+            <Text style={styles.sectionHeader2}>Phone</Text>
           </View>
           <Text style={styles.contactInfo}>T: +241 00000000</Text>
         </View>
@@ -61,7 +61,7 @@ const Pdf = () => (
         <View style={styles.section}>
           <View style={styles.contact}>
             <View style={styles.contactIconPlaceholder} />
-            <Text style={styles.sectionHeader}>Email</Text>
+            <Text style={styles.sectionHeader2}>Email</Text>
           </View>
           <Text style={styles.contactInfo}>abcde@gmail.com</Text>
         </View>
@@ -69,7 +69,7 @@ const Pdf = () => (
         <View style={styles.section}>
           <View style={styles.contact}>
             <View style={styles.contactIconPlaceholder} />
-            <Text style={styles.sectionHeader}>Website</Text>
+            <Text style={styles.sectionHeader2}>Website</Text>
           </View>
           <Text style={styles.contactInfo}>www.site.com</Text>
         </View>
@@ -77,7 +77,7 @@ const Pdf = () => (
         <View style={styles.section}>
           <View style={styles.contact}>
             <View style={styles.contactIconPlaceholder} />
-            <Text style={styles.sectionHeader}>Address</Text>
+            <Text style={styles.sectionHeader2}>Address</Text>
           </View>
           <Text style={styles.contactInfo}>Your street address</Text>
           <Text style={styles.contactInfo}>SS Street City'Zip Code-456</Text>
@@ -136,8 +136,14 @@ const Pdf = () => (
               {['Microsoft Word', 'Microsoft PowerPoint', 'HTML/CSS'].map((skill, index) => (
                 <View key={index} style={styles.skill}>
                   <Text style={styles.skillText}>{skill}</Text>
-                  <Image src={barre} style={styles.skillBar} />
-                </View>
+                  
+                  <View style={styles.section1}>
+                    <View style={styles.contact1}>
+                      <View style={styles.contactIconPlaceholder1} />
+                      <Text style={styles.sectionHeader2}></Text>
+                    </View>
+                  </View>                
+                  </View>
               ))}
             </View>
           </View>
@@ -171,45 +177,64 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 5,
+    paddingLeft: 30,
+
+  },
+
+  contactIconPlaceholder: {
+    width: 30,
+    height: 20,
+    backgroundColor: 'yellow',
+  },
+
+
+  sectionHeader2: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    paddingLeft: 10,
+    width: 170,
+    backgroundColor: 'grey',
+
   },
   sectionSubHeader: {
     fontSize: 12,
     fontWeight: 'bold',
     marginBottom: 3,
+    paddingLeft: 40,
   },
   sectionItem: {
     fontSize: 12,
     marginBottom: 3,
+    paddingLeft: 40,
+
   },
   sectionDate: {
     fontSize: 10,
     marginBottom: 3,
+    paddingLeft: 40,
   },
   contact: {
     flexDirection: 'row',
-    alignItems: 'center',
     marginBottom: 5,
   },
-  contactIconPlaceholder: {
-    width: 20,
-    height: 20,
-    backgroundColor: 'grey',
-    marginRight: 10,
-  },
+
   contactInfo: {
     fontSize: 10,
-    paddingLeft: 30,
+    paddingLeft: 40,
   },
+
+
+
   rightColumn: {
-    width: '65%',
+    width: '60%',
     backgroundColor: 'white',
-    padding: 20,
+    paddingTop: 50,
   },
   header: {
     backgroundColor: 'yellow',
-    padding: 10,
+    padding: 30,
     marginBottom: 20,
-    alignItems: 'center',
+    width: 1000,
   },
   firstName: {
     fontSize: 22,
@@ -225,18 +250,33 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 5,
+    paddingLeft: 30,
+    color: '#4C516D',
+
+
   },
   aboutText: {
     fontSize: 12,
-    marginBottom: 20,
+    marginBottom: 30,
+    paddingLeft: 40,
+    color: '#4C516D',
+
   },
   experience: {
     flexDirection: 'row',
     marginBottom: 10,
+    paddingLeft: 30,
+    color: '#4C516D',
+
+
   },
   experienceDate: {
     fontSize: 12,
     marginRight: 10,
+    color: '#4C516D',
+    paddingLeft: 20,
+
+
   },
   experienceDetails: {
     flex: 1,
@@ -249,31 +289,47 @@ const styles = StyleSheet.create({
   experienceCompany: {
     fontSize: 12,
     marginBottom: 3,
+    color: '#4C516D',
+
   },
   experienceDescription: {
     fontSize: 12,
+    color: '#4C516D',
+
   },
   skillsContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    paddingLeft: 120,
+    paddingTop: 10,
   },
   skillColumn: {
     flex: 1,
     paddingHorizontal: 10,
   },
+
+
   skill: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 20,
   },
   skillText: {
     fontSize: 12,
     flex: 1,
+    paddingLeft: 10,
+
   },
-  skillBar: {
-    width: 80,
-    height: 4,
-    marginLeft: 10,
+  section1: {
+    marginBottom: 20,
+  },
+
+  contact1: {
+    flexDirection: 'row',
+    marginBottom: 5,
+  },
+
+  contactIconPlaceholder1: {
+    width: 30,
+    height: 20,
+    backgroundColor: 'yellow',
   },
 });
 
