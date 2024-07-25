@@ -10,6 +10,7 @@ Font.register({
 
 const Pdf = () => (
   <Document>
+
     <Page size="A4" style={styles.page} wrap={false}>
 
       {/* Left column */}
@@ -21,6 +22,7 @@ const Pdf = () => (
         <View>
           <View style={styles.section}>
             <Text style={styles.sectionHeader}>EDUCATION</Text>
+            <View style={styles.ligne}></View>
             <Text style={styles.sectionSubHeader}>ENTER YOUR MAJOR</Text>
             <Text style={styles.sectionItem}>Name Of Your University</Text>
             <Text style={styles.sectionDate}>2009-2011</Text>
@@ -37,7 +39,9 @@ const Pdf = () => (
         <View>
           <View style={styles.section}>
             <Text style={styles.sectionHeader}>REFERENCE</Text>
-            <Text style={styles.sectionSubHeader}>Sara Taylor</Text>
+            <View style={styles.ligne}></View>
+
+            <Text style={styles.sectionSubHeader1}>Sara Taylor</Text>
             <Text style={styles.sectionItem}>Director | Company Name</Text>
             <Text style={styles.sectionDate}>T: +241 00000000</Text>
           </View>
@@ -96,6 +100,8 @@ const Pdf = () => (
 
         <View>
           <Text style={styles.aboutHeader}>ABOUT</Text>
+          <View style={styles.ligne1}></View>
+
           <Text style={styles.aboutText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </Text>
@@ -104,6 +110,8 @@ const Pdf = () => (
         {/* Work Experience */}
         <View style={styles.section}>
           <Text style={styles.aboutHeader}>WORK EXPERIENCE</Text>
+          <View style={styles.ligne1}></View>
+
 
           {[...Array(3)].map((_, index) => (
             <View key={index} style={styles.experience}>
@@ -123,10 +131,19 @@ const Pdf = () => (
         {/* Software Skills */}
         <View>
           <Text style={styles.aboutHeader}>SOFTWARE SKILL</Text>
-          <Text style={styles.cv}>FILIGRAME</Text>
+          <View style={styles.ligne1}></View>
+
+          <Text style={styles.cv}>CVTHEQUE</Text>
 
 
           <View style={styles.skillsContainer}>
+
+            <View style={styles.skillColumn}>
+
+            </View>
+
+
+
             <View style={styles.skillColumn}>
               {['Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'].map((skill, index) => (
                 <View key={index} style={styles.skill}>
@@ -170,15 +187,38 @@ const styles = StyleSheet.create({
   },
 
   cv: {
-
+    fontWeight: 'bold',
     opacity: 20,
     color: 'red',
     position: 'absolute',
-    fontSize: 60,
-    bottom: '200%',            /* Place le texte au milieu verticalement */
-    left: '0%',  
+    fontSize: 100,
+    bottom: '130%',            /* Place le texte au milieu verticalement */
+    right: '30%',
     transform: 'rotate(-67deg)', // Incline le texte de 67 degrés dans le sens contraire des aiguilles d'une montre
   },
+
+
+  ligne: {
+    height: 0.5,
+    width: 500,
+    backgroundColor: 'yellow',
+    borderTopWidth: 0,
+    margin: 15,
+    marginLeft: 30,
+
+  },
+
+
+  ligne1: {
+    height: 1,
+    width: 500,
+    backgroundColor: '#161718',
+    borderTopWidth: 0,
+    margin: 15,
+    marginLeft: 30,
+
+  },
+
 
   leftColumn: {
     width: '35%',
@@ -197,7 +237,6 @@ const styles = StyleSheet.create({
   sectionHeader: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginBottom: 5,
     paddingLeft: 30,
 
   },
@@ -220,9 +259,15 @@ const styles = StyleSheet.create({
   sectionSubHeader: {
     fontSize: 12,
     fontWeight: 'bold',
-    marginBottom: 3,
     paddingLeft: 40,
   },
+  sectionSubHeader1: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    paddingLeft: 40,
+    paddingTop: 10,
+  },
+
   sectionItem: {
     fontSize: 12,
     marginBottom: 3,
@@ -243,8 +288,6 @@ const styles = StyleSheet.create({
     fontSize: 10,
     paddingLeft: 40,
   },
-
-
 
   rightColumn: {
     width: '60%',
@@ -295,7 +338,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginRight: 10,
     color: '#4C516D',
-    paddingLeft: 20,
+    paddingLeft: 5,
 
 
   },
@@ -327,16 +370,15 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 10,
   },
-
-
   skill: {
     marginBottom: 20,
   },
+
   skillText: {
-    fontSize: 12,
+    fontSize: 8.5,
     flex: 1,
     paddingLeft: 10,
-
+    color: '#4C516D',
   },
   section1: {
   },
@@ -353,7 +395,6 @@ const styles = StyleSheet.create({
   },
 
   sectionHeader3: {
-    fontSize: 14,
     fontWeight: 'bold',
     width: 30,
     backgroundColor: 'grey',
