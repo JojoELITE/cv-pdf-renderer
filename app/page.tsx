@@ -12,12 +12,12 @@ export default function Home() {
     <main className="w-screen h-screen">
 
       <PDFViewer className="h-full w-full" /*showToolbar={false}*/>
-      {  /*<CvUn />*/}
+        {  /*<CvUn />*/}
 
-        {/*<CvDeux />*/}
-
-       <CvTrois/>
-        </PDFViewer>
+{        /*<CvDeux />*/
+}
+        <CvTrois/>
+      </PDFViewer>
     </main>
   );
 }
