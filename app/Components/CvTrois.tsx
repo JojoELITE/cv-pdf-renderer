@@ -130,46 +130,171 @@ const Pdf = () => (
             <Text style={styles.titre}>COMPETENCES CLES</Text>
             <View style={styles.ligne22}></View>
 
+            <View style={styles.competences}>
+              <Text style={styles.text}>Argumentation commerciale</Text>
+              <View style={styles.cadre}>
+                <View style={styles.progress22} />
+                <View style={styles.progress1111} />
+              </View>
+            </View>
 
-            <Text style={styles.aboutText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </Text>
+            <View style={styles.competences}>
+              <Text style={styles.textlong}>Logiciel de gestion de stock</Text>
+              <View style={styles.cadretextlong}>
+                <View style={styles.progress22} />
+                <View style={styles.progress1111} />
+              </View>
+            </View>
+
+            <View style={styles.competences}>
+              <Text style={styles.textlong}>Logiciel de gestion de billetterie</Text>
+              <View style={styles.cadretextlong}>
+                <View style={styles.progress22} />
+                <View style={styles.progress1111} />
+              </View>
+            </View>
+
+            <View style={styles.competences}>
+              <Text style={styles.textlong}>Service de carburant à la pompe</Text>
+              <View style={styles.cadretextlong}>
+                <View style={styles.progress22} />
+                <View style={styles.progress1111} />
+              </View>
+            </View>
+
+
+
           </View>
 
 
           <View>
-            <Text style={styles.titre}>A PROPOS DE MOI</Text>
+            <Text style={styles.titre}>OUTILS</Text>
             <View style={styles.ligne22}></View>
 
 
-            <Text style={styles.aboutText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </Text>
+            <View style={styles.outil1}>
+
+              <Image src={imageUrl7} style={styles.imagepoint} />
+              <Text style={styles.textoutil}>Figma
+              </Text>
+
+            </View>
+
+
+            <View style={styles.outil2}>
+
+              <Image src={imageUrl7} style={styles.imagepoint} />
+              <Text style={styles.textoutil}>Vs Code
+              </Text>
+
+            </View>
+
+            <View style={styles.outil3}>
+
+              <Image src={imageUrl7} style={styles.imagepoint} />
+              <Text style={styles.textoutil}>Adobe
+              </Text>
+
+            </View>
+
+
           </View>
 
 
+
           <View>
-            <Text style={styles.titre}>A PROPOS DE MOI</Text>
+            <Text style={styles.titre}>HOBBIES</Text>
             <View style={styles.ligne22}></View>
 
 
-            <Text style={styles.aboutText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </Text>
+            <View style={styles.outil1}>
+
+              <Image src={imageUrl7} style={styles.imagepoint} />
+              <Text style={styles.textoutil}>Chanter
+              </Text>
+
+            </View>
+
+
+            <View style={styles.outil2}>
+
+              <Image src={imageUrl7} style={styles.imagepoint} />
+              <Text style={styles.textoutil}>Danser
+              </Text>
+
+            </View>
+
+            <View style={styles.outil3}>
+
+              <Image src={imageUrl7} style={styles.imagepoint} />
+              <Text style={styles.textoutil}>Coder
+              </Text>
+
+            </View>
+
+
           </View>
 
 
+
           <View>
-            <Text style={styles.titre}>A PROPOS DE MOI</Text>
+            <Text style={styles.titre}>REFERENCE</Text>
             <View style={styles.ligne22}></View>
 
 
-            <Text style={styles.aboutText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </Text>
+            <View style={styles.namereference}>
+
+              <Text>MICKAEL CHRISTOPHER</Text>
+              <Text>Creative Manager</Text>
+              <Text>international Agency,NY</Text>
+
+            </View>
+
+
+            <View style={styles.contactreference}>
+
+              <Text style={styles.textreference}>P:
+              </Text>
+              <Text style={styles.textreference2}>+241 00000000
+              </Text>
+
+            </View>
+
+
+
+            <View style={styles.contactreference}>
+
+              <Text style={styles.textreference}>E:
+              </Text>
+              <Text style={styles.textreference2}>mickaelchristopher.com
+              </Text>
+
+            </View>
+
+
           </View>
 
         </View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <View style={styles.bas2}>
@@ -177,7 +302,269 @@ const Pdf = () => (
 
           <View>
             <Text style={styles.titre}>PARCOURS PROFESSIONNEL</Text>
-            <View style={styles.ligne22}></View>
+            <View style={styles.ligne222}></View>
+
+
+
+            <View>
+              <View style={styles.parcours}>
+
+                <View style={styles.parcours1}>
+
+                  <Text style={styles.parcourstitre}>HÔTESSE DE VENTE
+                  </Text>
+                  <Text style={styles.parcoursdate}>03/2018-AUJOURD'HUI
+                  </Text>
+
+                </View>
+
+                <View style={styles.parcourslieu}>
+
+                  <Text>Centre Commercial Auchan | Mantigues</Text>
+
+                </View>
+
+              </View>
+
+              <View style={styles.parcoursprofessionnel}>
+
+
+                <View>
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache1}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache1}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+                </View>
+
+
+                <View style={styles.Parcours}>
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache2}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache2}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+                </View>
+              </View>
+
+            </View>
+
+
+
+            <View>
+              <View style={styles.parcours}>
+
+                <View style={styles.parcours1}>
+
+                  <Text style={styles.parcourstitre}>HÔTESSE DE VENTE
+                  </Text>
+                  <Text style={styles.parcoursdate1}>03/2015-03/2018
+                  </Text>
+
+                </View>
+
+                <View style={styles.parcourslieu}>
+
+                  <Text>Centre Commercial Auchan | Mantigues</Text>
+
+                </View>
+
+              </View>
+
+              <View style={styles.parcoursprofessionnel}>
+
+
+                <View>
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache1}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache1}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+                </View>
+
+
+                <View style={styles.Parcours}>
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache2}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache2}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+                </View>
+              </View>
+
+            </View>
+
+
+
+            <View>
+              <View style={styles.parcours}>
+
+                <View style={styles.parcours1}>
+
+                  <Text style={styles.parcourstitre}>HÔTESSE DE VENTE
+                  </Text>
+                  <Text style={styles.parcoursdate2}>01/2012-01-2015
+                  </Text>
+
+                </View>
+
+                <View style={styles.parcourslieu}>
+
+                  <Text>Centre Commercial Auchan | Mantigues</Text>
+
+                </View>
+
+              </View>
+
+              <View style={styles.parcoursprofessionnel}>
+
+
+                <View>
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache1}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache1}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+                </View>
+
+
+                <View style={styles.Parcours}>
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache2}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+
+                  <View style={styles.parcourstache}>
+
+                    <Image src={imageUrl7} style={styles.imagepoint} />
+                    <Text style={styles.parcourstache2}>Rester souriante et courtoise en toutes circonstances.
+                    </Text>
+
+                  </View>
+                </View>
+              </View>
+
+            </View>
+
+          </View>
+
+
+
+
+          <View>
+            <Text style={styles.titre}>FORMATION</Text>
+            <View style={styles.ligne222}></View>
+
+
+
+            <View>
+              <View style={styles.parcours}>
+
+                <View style={styles.parcours1}>
+
+                  <Text style={styles.parcourstitre}>HÔTESSE DE VENTE
+                  </Text>
+                  <Text style={styles.parcoursdate3}>2019
+                  </Text>
+
+                </View>
+
+                <View style={styles.parcourslieu}>
+
+                  <Text>Centre Commercial Auchan | Mantigues</Text>
+                  <Text style={styles.formation}>Stage pratique : Truffaut, rayon animalerie et alimentation - Vendeuse stagiaire - 8 semaines</Text>
+
+
+                </View>
+
+              </View>
+
+
+
+            </View>
+
+
+
+
+
+
+
+            <View>
+              <View style={styles.parcours}>
+
+                <View style={styles.parcours1}>
+
+                  <Text style={styles.parcourstitre}>HÔTESSE DE VENTE
+                  </Text>
+                  <Text style={styles.parcoursdate3}>2019
+                  </Text>
+
+                </View>
+
+                <View style={styles.parcourslieu}>
+
+                  <Text>Centre Commercial Auchan | Mantigues</Text>
+                  <Text style={styles.formation}>Stage pratique : Truffaut, rayon animalerie et alimentation - Vendeuse stagiaire - 8 semaines</Text>
+
+
+                </View>
+
+              </View>
+
+            </View>
 
           </View>
 
@@ -205,6 +592,8 @@ const styles = StyleSheet.create({
     transform: 'rotate(-67deg)', // Incline le texte de 67 degrés dans le sens contraire des aiguilles d'une montre
   },
 
+  /******************************************************** */
+
 
   haut: {
     flexDirection: 'row',
@@ -216,7 +605,7 @@ const styles = StyleSheet.create({
 
   ligne2: {
     height: 1,
-    width: 175,
+    width: 200,
     backgroundColor: '#007FFF',
     margin: 2,
 
@@ -236,9 +625,16 @@ const styles = StyleSheet.create({
   _titre: {
     paddingTop: 10,
     color: '#007FFF',
-    fontWeight: 'bold',  // Texte en gras
     fontSize: 12,
+    fontFamily: 'Roboto-Bold',
 
+  },
+
+  ligne22: {
+    height: 1,
+    width: 200,
+    backgroundColor: '#007FFF',
+    marginLeft: 12,
   },
 
 
@@ -265,6 +661,8 @@ const styles = StyleSheet.create({
     width: 200,
     marginLeft: 12,
     marginTop: 8,
+    color: '#5e5e57'
+
   },
 
 
@@ -274,7 +672,14 @@ const styles = StyleSheet.create({
     width: 200,
     marginLeft: 12,
     marginTop: 3,
+    color: '#5e5e57'
+
   },
+
+
+
+
+  /********************************************************* */
 
 
   haut2: {
@@ -310,7 +715,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 12,
     marginLeft: 6,
-
   },
 
   imagereseau: {
@@ -337,17 +741,7 @@ const styles = StyleSheet.create({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+  /**************************************************************** */
 
 
 
@@ -360,29 +754,155 @@ const styles = StyleSheet.create({
   },
 
   titre: {
-    paddingTop: 10,
+    paddingTop: 14,
     color: '#007FFF',
-    fontWeight: 'bold',  // Texte en gras
+    fontFamily: 'Roboto-Bold',
     marginLeft: 12,
     fontSize: 12,
   },
 
+  /********************************************************** */
 
-  ligne22: {
-    height: 1,
-    width: 175,
-    backgroundColor: '#007FFF',
-    marginLeft: 12,
-  },
 
 
   bas1: {
 
     backgroundColor: '#f4f3f3',
     width: 220,
+    height: 520,
     marginLeft: 20,
+    color: '#5e5e57'
 
   },
+
+  competences: {
+
+    fontSize: 10,
+    marginTop: 8,
+    marginLeft: 12,
+    flexDirection: 'row',
+
+
+  },
+
+  text: {
+    width: 90,
+  },
+
+  textlong: {
+    width: 100,
+  },
+
+  cadre: {
+    borderWidth: 1,      // Largeur de la bordure
+    borderColor: '#007FFF', // Couleur de la bordure (blanche)
+    width: 60,          // Largeur de l'élément
+    height: 7,         // Hauteur de l'élément
+    marginLeft: 50,
+    flexDirection: 'row',
+    fontSize: 10,
+    marginTop: 3,
+
+  },
+
+  cadretextlong: {
+    borderWidth: 1,      // Largeur de la bordure
+    borderColor: '#007FFF', // Couleur de la bordure (blanche)
+    width: 60,          // Largeur de l'élément
+    height: 7,         // Hauteur de l'élément
+    marginLeft: 40,
+    flexDirection: 'row',
+    fontSize: 10,
+    marginTop: 3,
+
+  },
+
+
+  progress22: {
+    width: 1000,
+    height: 5,
+    backgroundColor: '#007FFF',
+  },
+
+  progress1111: {
+    width: 200,
+    height: 5,
+    backgroundColor: 'white',
+
+  },
+
+  outil1: {
+    flexDirection: 'row',
+    marginTop: 10,
+    marginLeft: 10,
+  },
+
+  outil2: {
+    flexDirection: 'row',
+    marginTop: 0,
+    marginLeft: 10,
+
+  },
+
+  outil3: {
+    flexDirection: 'row',
+    marginTop: 0,
+    marginLeft: 10,
+  },
+
+  imagepoint: {
+    width: 3,
+    height: 3,
+    marginTop: 8,
+  },
+
+  textoutil: {
+    fontSize: 10,
+    marginLeft: 8,
+    marginTop: 2,
+    width: 180,
+  },
+
+
+  namereference: {
+    fontSize: 10,
+    marginLeft: 12,
+    marginTop: 10,
+
+
+  },
+
+
+  contactreference: {
+
+    fontSize: 10,
+    marginLeft: 5,
+    marginTop: 4,
+    flexDirection: 'row'
+  },
+
+
+
+  textreference: {
+    fontSize: 10,
+    marginLeft: 8,
+    marginTop: 2,
+    color: '#007FFF',
+  },
+
+
+
+  textreference2: {
+    fontSize: 10,
+    marginLeft: 2,
+    marginTop: 2,
+  },
+
+
+
+
+  /*************************************************************** */
+
 
 
 
@@ -390,6 +910,126 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
 
+
+  ligne222: {
+    height: 1,
+    width: 315,
+    backgroundColor: '#007FFF',
+    marginLeft: 12,
+  },
+
+
+  parcours: {
+    marginLeft: 6,
+    marginTop: 8,
+
+  },
+
+  parcours1: {
+    flexDirection: 'row',
+  },
+
+  parcourstitre: {
+    fontSize: 10,
+    marginLeft: 8,
+    marginTop: 2,
+    color: '#007FFF',
+    fontFamily: 'Roboto-Bold',
+
+  },
+
+
+  parcoursdate: {
+    fontSize: 10,
+    marginHorizontal: 117,
+    marginTop: 2,
+    color: '#5e5e57',
+  },
+
+
+  parcoursdate1: {
+    fontSize: 10,
+    marginHorizontal: 145,
+    marginTop: 2,
+    color: '#5e5e57',
+  },
+
+
+  parcoursdate2: {
+    fontSize: 10,
+    marginHorizontal: 145,
+    marginTop: 2,
+    color: '#5e5e57',
+  },
+
+
+
+  parcourslieu: {
+    fontSize: 10,
+    marginLeft: 8,
+    marginTop: 3,
+    color: '#5e5e57',
+  },
+
+
+  parcoursprofessionnel: {
+    flexDirection: 'row',
+    marginLeft: 16,
+
+  },
+
+  parcourstache: {
+    flexDirection: 'row',
+    marginTop: 8,
+
+  },
+
+  parcourstache1: {
+
+    fontSize: 10,
+    width: 130,
+    marginTop: 2,
+    marginLeft: 10,
+    color: '#5e5e57',
+
+  },
+
+
+
+  Parcours: {
+    marginHorizontal: 20,
+  },
+
+
+
+  parcourstache2: {
+
+    fontSize: 10,
+    width: 130,
+    marginTop: 2,
+    marginLeft: 10,
+    color: '#5e5e57',
+
+  },
+
+
+  formation: {
+
+    width: 260,
+    marginTop: 4,
+
+  },
+
+
+
+  parcoursdate3: {
+    fontSize: 10,
+    marginHorizontal: 200,
+    marginTop: 2,
+    color: '#5e5e57',
+  },
+
+  
 
 });
 
