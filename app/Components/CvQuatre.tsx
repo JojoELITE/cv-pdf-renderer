@@ -73,7 +73,7 @@ const Pdf = () => (
 
                             </View>
 
-                            <View style={styles.outil3}>
+                            <View style={styles.AutreCompetences}>
 
                                 <Image src={imageUrl7} style={styles.imagepoint} />
                                 <Text style={styles.listesCompetences}>Adaptabilité</Text>
@@ -81,7 +81,7 @@ const Pdf = () => (
                             </View>
 
 
-                            <View style={styles.outil3}>
+                            <View style={styles.AutreCompetences}>
 
                                 <Image src={imageUrl7} style={styles.imagepoint} />
                                 <Text style={styles.listesCompetences}>Leadership</Text>
@@ -90,7 +90,7 @@ const Pdf = () => (
 
 
 
-                            <View style={styles.outil3}>
+                            <View style={styles.AutreCompetences}>
 
                                 <Image src={imageUrl7} style={styles.imagepoint} />
                                 <Text style={styles.listesCompetences}>Microsoft Excel</Text>
@@ -98,7 +98,7 @@ const Pdf = () => (
                             </View>
 
 
-                            <View style={styles.outil3}>
+                            <View style={styles.AutreCompetences}>
 
                                 <Image src={imageUrl7} style={styles.imagepoint} />
                                 <Text style={styles.listesCompetences}>Souci du détail</Text>
@@ -132,7 +132,7 @@ const Pdf = () => (
 
                             </View>
 
-                            <View style={styles.outil3}>
+                            <View style={styles.AutreCompetences}>
 
                                 <Image src={imageUrl7} style={styles.imagepoint} />
                                 <Text style={styles.listesCompetences}>Espagnol | Notions élémentaires
@@ -153,7 +153,7 @@ const Pdf = () => (
 
                             <View>
 
-                                <View style={styles.outil3}>
+                                <View style={styles.AutreCompetences}>
                                     <Image src={imageUrl3} style={styles.imagetel} />
                                     <Text style={styles.textSimple}>
                                         mail@gmail.com
@@ -161,26 +161,26 @@ const Pdf = () => (
                                 </View>
 
 
-                                <View style={styles.outil3}>
+                                <View style={styles.AutreCompetences}>
                                     <Image src={imageUrl2} style={styles.imagetel} />
                                     <View>
                                         <Text style={styles.textSimple}>
                                             12 rue de la reussite
                                         </Text>
-                                        <Text style={styles.aboutText1}>
+                                        <Text style={styles.textSimple1}>
                                             75012 Paris
                                         </Text>
                                     </View>
 
                                 </View>
-                                <View style={styles.outil3}>
+                                <View style={styles.AutreCompetences}>
                                     <Image src={imagePhone} style={styles.imagetel} />
                                     <Text style={styles.textSimple}>
                                         +241 00000000
                                     </Text>
                                 </View>
 
-                                <View style={styles.outil3}>
+                                <View style={styles.AutreCompetences}>
                                     <Image src={imageCalendar} style={styles.imagetel} />
                                     <Text style={styles.textSimple}>
                                         23 juin 1985
@@ -188,7 +188,7 @@ const Pdf = () => (
                                     </Text>
                                 </View>
 
-                                <View style={styles.outil3}>
+                                <View style={styles.AutreCompetences}>
                                     <Image src={imageWorld} style={styles.imagetel} />
                                     <Text style={styles.textSimple}>
                                         Française
@@ -196,7 +196,7 @@ const Pdf = () => (
                                     </Text>
                                 </View>
 
-                                <View style={styles.outil3}>
+                                <View style={styles.AutreCompetences}>
                                     <Image src={imageLink1} style={styles.imagetel} />
                                     <Text style={styles.textSimple}>
                                         linkedin.com/theophilehamon
@@ -217,7 +217,7 @@ const Pdf = () => (
                     </View>
 
 
-{/*******************************************************************************************/}
+                    {/*******************************************************************************************/}
 
                     <View style={styles.colonneDroite}>
 
@@ -414,7 +414,7 @@ const Pdf = () => (
                                         <Text style={styles.PostesExperience}>Comptabilité Financière Avancée
 
                                         </Text>
-                                        <Text style={styles.parcoursdate4}>Juil 2009 - Déc 2009
+                                        <Text style={styles.ExperienceDate4}>Juil 2009 - Déc 2009
 
 
                                         </Text>
@@ -457,7 +457,7 @@ const Pdf = () => (
 
                                         <Text style={styles.PostesExperience}>Auditing
                                         </Text>
-                                        <Text style={styles.parcoursdate5}>Juil 2009 - Déc 2009
+                                        <Text style={styles.ExperienceDate5}>Juil 2009 - Déc 2009
 
 
                                         </Text>
@@ -500,7 +500,7 @@ const Pdf = () => (
                                         <Text style={styles.PostesExperience}>Comptabilité de Gestion
 
                                         </Text>
-                                        <Text style={styles.parcoursdate6}>Juil 2008 - Juin 2009
+                                        <Text style={styles.ExperienceDate6}>Juil 2008 - Juin 2009
 
 
                                         </Text>
@@ -569,8 +569,6 @@ const styles = StyleSheet.create({
         marginTop: 50,
     },
 
-    /******************************************************** */
-
 
     barrebleue: {
         backgroundColor: '#007FFF',
@@ -583,6 +581,18 @@ const styles = StyleSheet.create({
         width: 1,
         height: 900,
         marginLeft: 40,
+    },
+
+
+
+    /************************************************************************************************** */
+
+
+
+    colonneGauche: {
+
+        width: '35%',
+
     },
 
 
@@ -601,11 +611,6 @@ const styles = StyleSheet.create({
         marginLeft: 12,
     },
 
-
-    contact: {
-        flexDirection: 'row',
-
-    },
 
     imagetel: {
         width: 12,
@@ -626,7 +631,7 @@ const styles = StyleSheet.create({
     },
 
 
-    aboutText1: {
+    textSimple1: {
 
         fontSize: 10,
         width: 200,
@@ -639,8 +644,15 @@ const styles = StyleSheet.create({
 
 
 
-    /********************************************************* */
+    /*************************************************************************************************/
 
+
+
+
+    colonneDroite: {
+        width: '65%',
+        margin: 20,
+    },
 
 
     nom: {
@@ -658,13 +670,6 @@ const styles = StyleSheet.create({
         marginTop: 14,
         color: '#5e5e57',
     },
-
-
-    /**************************************************************** */
-
-
-
-
 
 
     Info: {
@@ -688,15 +693,6 @@ const styles = StyleSheet.create({
         fontSize: 12,
     },
 
-    /********************************************************** */
-
-
-
-    colonneGauche: {
-
-        width: '35%',
-
-    },
 
     competences: {
 
@@ -707,12 +703,6 @@ const styles = StyleSheet.create({
 
 
     },
-
-    text: {
-        width: 90,
-    },
-
-
 
     Listes: {
         flexDirection: 'row',
@@ -727,7 +717,7 @@ const styles = StyleSheet.create({
 
     },
 
-    outil3: {
+    AutreCompetences: {
         flexDirection: 'row',
         marginTop: 0,
         marginLeft: 10,
@@ -746,54 +736,6 @@ const styles = StyleSheet.create({
         width: 180,
         color: '#5e5e57'
 
-    },
-
-
-    namereference: {
-        fontSize: 10,
-        marginLeft: 12,
-        marginTop: 10,
-
-
-    },
-
-
-    contactreference: {
-
-        fontSize: 10,
-        marginLeft: 5,
-        marginTop: 4,
-        flexDirection: 'row'
-    },
-
-
-
-    textreference: {
-        fontSize: 10,
-        marginLeft: 8,
-        marginTop: 2,
-        color: '#007FFF',
-    },
-
-
-
-    textreference2: {
-        fontSize: 10,
-        marginLeft: 2,
-        marginTop: 2,
-    },
-
-
-
-
-    /*************************************************************** */
-
-
-
-
-    colonneDroite: {
-        width: '65%',
-        margin: 20,
     },
 
 
@@ -896,17 +838,6 @@ const styles = StyleSheet.create({
 
 
 
-    parcourstache2: {
-
-        fontSize: 10,
-        width: 130,
-        marginTop: 2,
-        marginLeft: 10,
-        color: '#5e5e57',
-
-    },
-
-
     formation: {
 
         width: 260,
@@ -916,7 +847,7 @@ const styles = StyleSheet.create({
 
 
 
-    parcoursdate4: {
+    ExperienceDate4: {
         fontSize: 10,
         marginLeft: 80,
         marginTop: 2,
@@ -924,7 +855,7 @@ const styles = StyleSheet.create({
     },
 
 
-    parcoursdate5: {
+    ExperienceDate5: {
         fontSize: 10,
         marginLeft: 185,
         marginTop: 2,
@@ -932,7 +863,7 @@ const styles = StyleSheet.create({
     },
 
 
-    parcoursdate6: {
+    ExperienceDate6: {
         fontSize: 10,
         marginLeft: 120,
         marginTop: 2,
