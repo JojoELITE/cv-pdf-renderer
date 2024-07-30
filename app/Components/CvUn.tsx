@@ -133,7 +133,7 @@ const Pdf = () => (
           <Text style={styles.aboutHeader}>SOFTWARE SKILL</Text>
           <View style={styles.ligne1}></View>
 
-          <Text style={styles.cv}>CVTHEQUE</Text>
+          <Text style={styles.cv}>CVPROS</Text>
 
 
           <View style={styles.skillsContainer}>
