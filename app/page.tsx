@@ -3,8 +3,9 @@
 import React from 'react';
 import { PDFViewer } from '@react-pdf/renderer';
 //import CvUn from './Components/CvUn';
-import CvDeux from './Components/CVDeux'
-//import CvTrois from './Components/CvTrois'
+//import CvDeux from './Components/CVDeux';
+//import CvTrois from './Components/CvTrois';
+import CvQuatre from './Components/CvQuatre';
 
 
 export default function Home() {
@@ -14,9 +15,12 @@ export default function Home() {
       <PDFViewer className="h-full w-full" /*showToolbar={false}*/>
         {  /*<CvUn />*/}
 
-     <CvDeux />
+        {/*<CvDeux />*/}
 
         {/*<CvTrois/>*/}
+
+        <CvQuatre/>
+
       </PDFViewer>
     </main>
   );
