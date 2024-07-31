@@ -798,8 +798,7 @@ const styles = StyleSheet.create({
 
     AutreCompetences: {
         flexDirection: 'row',
-        paddingTop: 0,
-        paddingLeft: 28,
+        paddingLeft: 30,
     },
 
     imagepoint: {
@@ -891,6 +890,7 @@ const styles = StyleSheet.create({
 
     ExperienceTache1: {
         flexDirection: 'row',
+        paddingTop: 8,
 
     },
 

@@ -765,7 +765,6 @@ const styles = StyleSheet.create({
 
     PostesExperience: {
         fontSize: 10,
-        paddingTop: 2,
         fontFamily: 'Roboto-Bold',
 
     },
@@ -806,11 +805,14 @@ const styles = StyleSheet.create({
     ExperienceTache: {
         flexDirection: 'row',
         paddingTop: 8,
+        
 
     },
 
     ExperienceTache1: {
         flexDirection: 'row',
+        paddingTop: 8,
+
 
     },
 
