@@ -148,7 +148,7 @@ const Pdf = () => (
               {['Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'].map((skill, index) => (
                 <View key={index} style={styles.skill}>
                   <Text style={styles.skillText}>{skill}</Text>
-                  <View style={styles.section1}>
+                  <View>
                     <View style={styles.contact1}>
                       <View style={styles.contactIconPlaceholder1} />
                       <Text style={styles.sectionHeader3}></Text>
@@ -163,7 +163,7 @@ const Pdf = () => (
                 <View key={index} style={styles.skill}>
                   <Text style={styles.skillText}>{skill}</Text>
 
-                  <View style={styles.section1}>
+                  <View>
                     <View style={styles.contact1}>
                       <View style={styles.contactIconPlaceholder1} />
                       <Text style={styles.sectionHeader3}></Text>
@@ -382,8 +382,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     color: '#4C516D',
   },
-  section1: {
-  },
+
 
   contact1: {
     flexDirection: 'row',
