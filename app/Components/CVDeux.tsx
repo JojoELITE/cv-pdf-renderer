@@ -456,7 +456,7 @@ const styles = StyleSheet.create({
   imagetel: {
     width: 10,
     height: 10,
-
+    marginTop: 8,
   },
 
 
@@ -507,29 +507,29 @@ const styles = StyleSheet.create({
 
 
   t1: {
-    marginTop: 0,
+    paddingTop: 0,
   },
 
 
   t2: {
-    marginTop: 6,
+    paddingTop: 6,
   },
 
 
   t3: {
-    marginTop: 10,
+    paddingTop: 10,
   },
 
   t4: {
-    marginTop: 6,
+    paddingTop: 6,
   },
 
   t5: {
-    marginTop: 6,
+    paddingTop: 6,
   },
 
   t6: {
-    marginTop: 6,
+    paddingTop: 6,
   },
 
 
@@ -585,7 +585,7 @@ const styles = StyleSheet.create({
 
   exper1: {
     paddingTop: 8,
-    marginLeft: 4,
+    paddingLeft: 4,
   },
 
   progress11: {
@@ -608,7 +608,7 @@ const styles = StyleSheet.create({
 
   progress1111: {
     width: 10,
-    backgroundColor: '#1ca9c9',
+    backgroundColor: '#AFEEEE',
 
   },
 
@@ -620,7 +620,7 @@ const styles = StyleSheet.create({
 
   progress11111: {
     width: 25,
-    backgroundColor: '#1ca9c9',
+    backgroundColor: '#AFEEEE',
 
   },
 
@@ -652,12 +652,12 @@ const styles = StyleSheet.create({
 
   text1: {
     fontSize: 10,
-    marginLeft: 35,
+    paddingLeft: 35,
   },
 
   text2: {
     fontSize: 10,
-    marginLeft: 50,
+    paddingLeft: 50,
 
   },
 
@@ -692,7 +692,7 @@ const styles = StyleSheet.create({
   },
 
   text11: {
-    marginLeft: 35,
+    paddingLeft: 35,
   },
 
   langue11: {
@@ -700,7 +700,7 @@ const styles = StyleSheet.create({
   },
 
   text22: {
-    marginLeft: 33,
+    paddingLeft: 33,
   },
 
   bar01: {
@@ -758,13 +758,13 @@ const styles = StyleSheet.create({
   },
 
   passion11: {
-    marginLeft: 10,
+    paddingLeft: 10,
     fontWeight: 'bold',
   },
 
 
   passion111: {
-    marginLeft: 30,
+    paddingLeft: 30,
     fontSize: 10,
     paddingTop: 5,
 
@@ -785,13 +785,12 @@ const styles = StyleSheet.create({
   outils: {
 
     paddingLeft: 35,
-    marginTop: 30,
+    paddingTop: 30,
 
   },
 
   outil: {
     fontSize: 14,
-    margin: 0,
   },
 
   outiliste: {
@@ -803,7 +802,7 @@ const styles = StyleSheet.create({
   certificats: {
 
     paddingLeft: 35,
-    marginTop: 30,
+    paddingTop: 30,
   },
 
   certificat: {
@@ -822,6 +821,7 @@ const styles = StyleSheet.create({
   rightColumn1: {
     width: '65%',
     backgroundColor: 'white',
+    height: 800,
     paddingLeft: 30,
     paddingTop: 30,
   },
@@ -852,20 +852,20 @@ const styles = StyleSheet.create({
 
     flexDirection: 'row',
     fontSize: 10,
-    marginLeft: 10,
+    paddingLeft: 10,
 
   },
 
   contact011: {
     fontSize: 10,
-    marginLeft: 5,
+    paddingLeft: 5,
 
   },
 
 
   summary: {
 
-    marginTop: 23,
+    paddingTop: 23,
   },
 
 
@@ -882,7 +882,7 @@ const styles = StyleSheet.create({
 
 
   key: {
-    marginTop: 20,
+    paddingTop: 20,
 
   },
 
@@ -896,31 +896,31 @@ const styles = StyleSheet.create({
   key01: {
 
     flexDirection: 'row',
-    marginTop: 6
 
   },
 
   key011: {
     fontSize: 12,
     fontWeight: 'black',
-    marginLeft: 14,
+    paddingLeft: 14,
+    paddingTop: 6,
   },
 
 
   key022: {
     fontSize: 10,
-    marginLeft: 35,
+    paddingLeft: 35,
     width: 270,
-    marginTop: 6,
+    paddingTop: 6,
 
   },
 
 
   key0222: {
     fontSize: 10,
-    marginLeft: 35,
+    paddingLeft: 35,
     width: 120,
-    marginTop: 6,
+    paddingTop: 6,
 
   },
 
@@ -931,7 +931,7 @@ const styles = StyleSheet.create({
   },
 
   directors: {
-    marginTop: 8,
+    paddingTop: 8,
   },
 
   directors1: {
@@ -940,7 +940,7 @@ const styles = StyleSheet.create({
   },
 
   exper: {
-    marginTop: 6,
+    paddingTop: 6,
 
   },
 
@@ -949,15 +949,15 @@ const styles = StyleSheet.create({
   experiences1: {
 
     fontSize: 12,
-    marginTop: 6,
+    paddingTop: 6,
 
   },
 
   experiences2: {
 
     fontSize: 10,
-    marginLeft: 80,
-    marginTop: 6,
+    paddingLeft: 80,
+    paddingTop: 6,
 
   },
 
@@ -965,8 +965,8 @@ const styles = StyleSheet.create({
   experiences22: {
 
     fontSize: 12,
-    marginLeft: 218,
-    marginTop: 6,
+    paddingLeft: 218,
+    paddingTop: 6,
 
   },
 
@@ -974,7 +974,7 @@ const styles = StyleSheet.create({
 
   ecole: {
 
-    marginTop: 20,
+    paddingTop: 20,
   },
 
 
@@ -987,7 +987,7 @@ const styles = StyleSheet.create({
 
   ecole11: {
 
-    marginTop: 6,
+    paddingTop: 6,
     fontSize: 12,
 
   },
@@ -996,30 +996,30 @@ const styles = StyleSheet.create({
   ecole22: {
 
     fontSize: 10,
-    marginTop: 6,
-    marginLeft: 150,
+    paddingTop: 6,
+    paddingLeft: 150,
   },
 
 
   ecole3: {
     fontSize: 12,
     color: '#008080',
-    marginTop: 3,
+    paddingTop: 3,
   },
 
 
 
   ecoles: {
     flexDirection: 'row',
-    marginTop: 6,
+    paddingTop: 6,
   },
 
 
   ecoles1: {
 
     fontSize: 10,
-    marginTop: 6,
-    marginLeft: 185,
+    paddingTop: 6,
+    paddingLeft: 185,
 
   },
 

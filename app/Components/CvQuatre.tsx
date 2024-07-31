@@ -760,7 +760,8 @@ const styles = StyleSheet.create({
     Listesexperiences: {
         display: 'flex',
         justifyContent: 'space-between',
-        flexDirection: 'row',    },
+        flexDirection: 'row',    
+    },
 
     PostesExperience: {
         fontSize: 10,
