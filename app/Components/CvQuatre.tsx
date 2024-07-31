@@ -564,9 +564,9 @@ const styles = StyleSheet.create({
 
     image: {
         width: 120,
-        height: 150,
+        height: 100,
         paddingLeft: 50,
-        paddingTop: 50,
+        marginTop: 30,
     },
 
 
@@ -658,8 +658,7 @@ const styles = StyleSheet.create({
 
     nom: {
 
-        fontSize: 30,
-        margin: 2,
+        fontSize: 40,
         fontWeight: 'black',
 
     },
@@ -668,7 +667,7 @@ const styles = StyleSheet.create({
     fonction: {
 
         fontSize: 18,
-        paddingTop: 14,
+        paddingTop: 10,
         color: '#5e5e57',
     },
 
@@ -687,7 +686,7 @@ const styles = StyleSheet.create({
 
 
     titreExperience: {
-        paddingTop: 60,
+        paddingTop: 30,
         color: '#007FFF',
         fontFamily: 'Roboto-Bold',
         fontSize: 12,
