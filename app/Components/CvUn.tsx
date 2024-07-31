@@ -226,13 +226,15 @@ const styles = StyleSheet.create({
     color: 'white',
     padding: 10,
   },
+
   image: {
-    width: 200,
+    width: 180,
     height: 220,
-    marginBottom: 20,
+    
   },
+
   section: {
-    marginBottom: 20,
+    paddingTop: 20,
   },
   sectionHeader: {
     fontSize: 16,
