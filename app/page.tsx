@@ -5,8 +5,8 @@ import { PDFViewer } from '@react-pdf/renderer';
 //import CvUn from './Components/CvUn';
 //import CvDeux from './Components/CVDeux';
 //import CvTrois from './Components/CvTrois';
-//import CvQuatre from './Components/CvQuatre';
-import CvCinq from './Components/CvCinq';
+import CvQuatre from './Components/CvQuatre';
+//import CvCinq from './Components/CvCinq';
 
 
 export default function Home() {
@@ -20,10 +20,9 @@ export default function Home() {
 
         {/*<CvTrois/>*/}
 
-        {/*<CvQuatre />*/}
+        <CvQuatre />
 
-
-        <CvCinq />
+        {/*<CvCinq />*/}
 
       </PDFViewer>
     </main>

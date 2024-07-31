@@ -563,23 +563,23 @@ const styles = StyleSheet.create({
     },
 
     image: {
-        width: 100,
+        width: 120,
         height: 150,
-        marginLeft: 50,
-        marginTop: 50,
+        paddingLeft: 50,
+        paddingTop: 50,
     },
 
 
     barrebleue: {
         backgroundColor: '#007FFF',
         width: 50,
-        height: 900,
+        height: 800,
     },
 
     barremilieu: {
         backgroundColor: '#5e5e57',
         width: 1,
-        height: 900,
+        height: 800,
         marginLeft: 40,
     },
 
@@ -592,6 +592,7 @@ const styles = StyleSheet.create({
     colonneGauche: {
 
         width: '35%',
+        paddingLeft: 10,
 
     },
 
@@ -616,7 +617,7 @@ const styles = StyleSheet.create({
         width: 12,
         height: 10,
         marginTop: 8,
-        paddingLeft: 4,
+        marginLeft: 4,
     },
 
 
@@ -624,8 +625,8 @@ const styles = StyleSheet.create({
 
         fontSize: 10,
         width: 180,
-        marginLeft: 12,
-        marginTop: 8,
+        paddingLeft: 12,
+        paddingTop: 8,
         color: '#5e5e57'
 
     },
@@ -635,8 +636,8 @@ const styles = StyleSheet.create({
 
         fontSize: 10,
         width: 200,
-        marginLeft: 12,
-        marginTop: 3,
+        paddingLeft: 12,
+        paddingTop: 3,
         color: '#5e5e57'
 
     },
@@ -657,7 +658,7 @@ const styles = StyleSheet.create({
 
     nom: {
 
-        fontSize: 50,
+        fontSize: 30,
         margin: 2,
         fontWeight: 'black',
 
@@ -667,27 +668,26 @@ const styles = StyleSheet.create({
     fonction: {
 
         fontSize: 18,
-        marginTop: 14,
+        paddingTop: 14,
         color: '#5e5e57',
     },
 
 
     Info: {
         flexDirection: 'row',
-        margin: 0,
     },
 
     grandTitre: {
         paddingTop: 40,
         color: '#007FFF',
         fontFamily: 'Roboto-Bold',
-        marginLeft: 10,
+        paddingLeft: 10,
         fontSize: 12,
     },
 
 
     titreExperience: {
-        marginTop: 65,
+        paddingTop: 60,
         color: '#007FFF',
         fontFamily: 'Roboto-Bold',
         fontSize: 12,
@@ -697,8 +697,8 @@ const styles = StyleSheet.create({
     competences: {
 
         fontSize: 10,
-        marginTop: 8,
-        marginLeft: 12,
+        paddingTop: 8,
+        paddingLeft: 12,
         flexDirection: 'row',
 
 
@@ -706,21 +706,20 @@ const styles = StyleSheet.create({
 
     Listes: {
         flexDirection: 'row',
-        marginTop: 10,
-        marginLeft: 10,
+        paddingTop: 10,
+        paddingLeft: 10,
     },
 
     ListesLangues: {
         flexDirection: 'row',
-        marginTop: 0,
-        marginLeft: 10,
+        paddingLeft: 10,
 
     },
 
     AutreCompetences: {
         flexDirection: 'row',
-        marginTop: 0,
-        marginLeft: 10,
+        paddingTop: 0,
+        paddingLeft: 10,
     },
 
     imagepoint: {
@@ -731,8 +730,8 @@ const styles = StyleSheet.create({
 
     listesCompetences: {
         fontSize: 10,
-        marginLeft: 8,
-        marginTop: 2,
+        paddingLeft: 8,
+        paddingTop: 2,
         width: 180,
         color: '#5e5e57'
 
@@ -755,17 +754,18 @@ const styles = StyleSheet.create({
 
 
     Experience: {
-        marginTop: 8,
+        paddingTop: 8,
 
     },
 
     Listesexperiences: {
-        flexDirection: 'row',
-    },
+        display: 'flex',
+        justifyContent: 'space-between',
+        flexDirection: 'row',    },
 
     PostesExperience: {
         fontSize: 10,
-        marginTop: 2,
+        paddingTop: 2,
         fontFamily: 'Roboto-Bold',
 
     },
@@ -773,24 +773,18 @@ const styles = StyleSheet.create({
 
     ExperienceDate: {
         fontSize: 10,
-        marginLeft: 130,
-        marginTop: 2,
         color: '#5e5e57',
     },
 
 
     ExperienceDate0: {
         fontSize: 10,
-        marginLeft: 110,
-        marginTop: 2,
         color: '#5e5e57',
     },
 
 
     ExperienceDate1: {
         fontSize: 10,
-        marginLeft: 170,
-        marginTop: 2,
         color: '#5e5e57',
     },
 
@@ -798,20 +792,20 @@ const styles = StyleSheet.create({
 
     ExperienceLieu: {
         fontSize: 10,
-        marginTop: 3,
+        paddingTop: 3,
         color: '#5e5e57',
     },
 
 
     parcoursprofessionnel: {
         flexDirection: 'row',
-        marginLeft: 0,
+        paddingLeft: 0,
 
     },
 
     ExperienceTache: {
         flexDirection: 'row',
-        marginTop: 8,
+        paddingTop: 8,
 
     },
 
@@ -823,9 +817,9 @@ const styles = StyleSheet.create({
     ExperienceTacheAutre: {
 
         fontSize: 10,
-        width: 280,
-        marginTop: 2,
-        marginLeft: 10,
+        width: 300,
+        paddingTop: 2,
+        paddingLeft: 10,
         color: '#5e5e57',
 
     },
@@ -841,7 +835,7 @@ const styles = StyleSheet.create({
     formation: {
 
         width: 260,
-        marginTop: 4,
+        paddingTop: 4,
 
     },
 
@@ -849,24 +843,18 @@ const styles = StyleSheet.create({
 
     ExperienceDate4: {
         fontSize: 10,
-        marginLeft: 80,
-        marginTop: 2,
         color: '#5e5e57',
     },
 
 
     ExperienceDate5: {
         fontSize: 10,
-        marginLeft: 185,
-        marginTop: 2,
         color: '#5e5e57',
     },
 
 
     ExperienceDate6: {
         fontSize: 10,
-        marginLeft: 120,
-        marginTop: 2,
         color: '#5e5e57',
     },
 
